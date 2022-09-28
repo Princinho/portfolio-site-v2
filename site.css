@@ -102,7 +102,9 @@ body{
     box-shadow: 0px 1px 2px #bbb;
     border-radius: .2em;
 }
-
+.section--about p:first-of-type{
+    margin-top: 0;
+}
 .section__title{
     display: inline-block;
     position: relative;
@@ -149,4 +151,25 @@ body{
 .skill-name{
     margin-bottom: 0;
     font-size: .8em;
+}
+
+.project{
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 16px;
+    padding: .5em;
+}
+
+.project-title{
+font-weight: 600;
+font-size: 1.5rem;
+}
+
+.project-img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.project-link:first-of-type{
+    margin-right: 2em;
 }
