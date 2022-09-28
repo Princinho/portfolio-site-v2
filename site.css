@@ -1,0 +1,127 @@
+
+:root{
+    --clr-accent:#7A44DF;
+}
+
+body{
+    background-color: #F7F7F7;
+    font-family: 'Poppins', sans-serif;
+    padding: 1em;
+}
+
+/* Navigation menu */
+.nav-toggle{
+    min-height: 2em;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    right: 1em;
+    top: 2em;
+}
+.nav-toggle:hover{
+    background-color: #e3e3e3;
+}
+.hamburger{
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: .2em;
+    background-color: var(--clr-accent)
+    /* border: 1px solid red; */
+}
+.hamburger::before{
+    content: '';
+    width: 2em;
+    height: .2em;
+    background-color:  var(--clr-accent);
+    position: absolute;
+    top: .45em;
+    left: 0;
+}
+.hamburger::after{
+    content: '';
+    width: 2em;
+    height: .2em;
+    background-color:  var(--clr-accent);
+    position: absolute;
+    top: -.4em;
+    left: 0;
+}
+
+
+.header{
+    text-align: center;
+}
+.greetings{
+    text-transform: uppercase;
+}
+
+
+.highlight{
+    color:  var(--clr-accent);
+}
+
+
+.profile-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 10px 0px 0px #D9C8F1;
+    display: inline-block;
+    margin: 0 auto 2em;
+}
+.name{
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    font-size: 2.5rem;
+}
+.role{
+    font-size: 1.1em;
+}
+.intro{
+    letter-spacing: .1em;
+}
+.btn{
+    color: white;
+    background-color: var(--clr-accent);
+    padding: .8em 2em;
+    display: inline-block;
+    border-radius: 2em;
+}
+.social-links{
+    margin-top: 1.5em;
+}
+.social-link img{
+    width: 1.8em;
+    background-color: white;
+    padding: .5em;
+    box-shadow: 0px 1px 2px #bbb;
+    border-radius: .2em;
+}
+
+.section__title{
+    display: inline-block;
+    position: relative;
+    }
+.section__title::after{
+    content: '';
+    height: 3em;
+    width: 1px;
+    background-color: #1e1e1e;
+    position: absolute;
+    right: -1em;
+    bottom: 0em;
+}
+.section__small-title{
+    border-top: 1px solid black;
+    padding-top: 2em;
+    display: block;
+    font-size: .6em;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: right;
+}
