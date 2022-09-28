@@ -125,3 +125,28 @@ body{
     font-weight: 400;
     text-align: right;
 }
+.skills{
+    display: grid;
+    grid: 1fr/repeat(auto-fill,minmax(5em,1fr));
+    gap: 1rem;
+}
+.skill{
+    margin:0 auto;
+    background-color: white;
+    border-radius: .5rem;
+    width: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    box-shadow: 2px 2px 6px #ddd;
+
+}
+.skill-img{
+    width: 2em;
+}
+.skill-name{
+    margin-bottom: 0;
+    font-size: .8em;
+}
