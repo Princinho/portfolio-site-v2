@@ -1,5 +1,19 @@
 
 :root{
+    --clr-accent:#78380c;
+    --clr-accent-dark:#562a0e;
+    --clr-accent-light:#c8691c;
+    --clr-shallow-shadow:#ddd;
+    --clr-dark-shadow:#bbb;
+    --box-shadow-1:#d09259;
+    --box-shadow-2:#d6a679;
+    --box-shadow-3:#e4ceaf;
+    --clr-primary-dark:#1e1e1e;
+    --clr-grey-text:#777;
+    --bg-primary:#f7f7f7;
+}
+
+/* :root{
     --clr-accent:#7A44DF;
     --clr-accent-dark:#7138dd;
     --clr-accent-light:#9559e8;
@@ -11,7 +25,7 @@
     --clr-primary-dark:#1e1e1e;
     --clr-grey-text:#777;
     --bg-primary:#f7f7f7;
-}
+} */
 *{
     box-sizing: border-box;
 }
@@ -86,7 +100,7 @@ main{
     left: 0;
     top: 0;
     height: 100vh;
-    width: 120px;
+    width: 180px;
     background-color: var(--clr-accent);
     color: white;
     transform: translateX(-100%);
@@ -99,7 +113,7 @@ main{
 
 .main-nav header{
     background-color: var(--clr-accent-dark);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     padding: .5em 1em ;
 }
@@ -123,6 +137,8 @@ main{
     border-radius: .5em;
     padding: .4em 1em;
     margin-bottom: 1em;
+    /* min-width: 150px; */
+    
 }
 .nav-img{
     filter: invert(100%) sepia(0%) saturate(7443%) hue-rotate(192deg) brightness(116%) contrast(100%);
@@ -148,6 +164,9 @@ main{
 .nav-link:hover,
 .nav-link:focus{
     box-shadow: 1px 1px 8px rgba(30, 30, 30, .2);
+}
+.scroll-down-icon{
+    display:none;
 }
 /* 
 ============================
@@ -215,6 +234,10 @@ main{
 }
 .social-link{
     margin: 0 .5em;
+    transition: all 250ms;
+}
+.social-link:hover img{
+    opacity: .8;    
 }
 .social-link img{
     width: 2.8em;
@@ -294,6 +317,9 @@ font-size: 1.5rem;
 .project-link:first-of-type{
     margin-right: 2em;
 }
+.project-link:hover{
+    opacity: .7;
+}
 .section__subtitle{
     font-weight: 400;
     font-size: 1.4rem;
@@ -341,7 +367,7 @@ font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #9559e8;
+    background-color: var(--clr-accent);
     min-height: 50px;
     min-width: 50px;
     border-radius: 50%;
@@ -402,8 +428,10 @@ font-size: 1.5rem;
     }
     .main-nav{
         transform: translateX(0);
+        width: 130px;
     }
     .scroll-down-icon{
+        display: inline;
         position: absolute;
         bottom: 0;
         left: 25%;
@@ -446,6 +474,10 @@ font-size: 1.5rem;
     }
     .main-nav:hover .nav-link{
         grid-template-columns: 1fr 1fr 3fr;
+    }
+    .main-nav:hover .scroll-down-icon{
+        left: calc(50% - 2em)
+        
     }
     .section h2+p{
         background-color: var(--bg-primary);
