@@ -13,6 +13,7 @@ body{
     background-color: #F7F7F7;
     font-family: 'Poppins', sans-serif;
     padding: 1em;
+    scroll-behavior: smooth;
 }
 a{
     color: var(--clr-accent);
@@ -82,7 +83,7 @@ a{
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
-.hidden-nav .main-nav{
+.visible-nav .main-nav{
     transform: translateX(0);
 }
 
