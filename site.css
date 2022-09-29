@@ -2,6 +2,9 @@
 :root{
     --clr-accent:#7A44DF;
 }
+*{
+    box-sizing: border-box;
+}
 
 body{
     background-color: #F7F7F7;
@@ -95,8 +98,15 @@ body{
 .social-links{
     margin-top: 1.5em;
 }
+.section{
+    line-height: 1.4em;
+    margin-top: 8em;
+}
+.social-link{
+    margin: 0 .5em;
+}
 .social-link img{
-    width: 1.8em;
+    width: 2.8em;
     background-color: white;
     padding: .5em;
     box-shadow: 0px 1px 2px #bbb;
@@ -136,7 +146,7 @@ body{
     margin:0 auto;
     background-color: white;
     border-radius: .5rem;
-    width: 4em;
+    width: 5.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,4 +182,46 @@ font-size: 1.5rem;
 }
 .project-link:first-of-type{
     margin-right: 2em;
+}
+.section__subtitle{
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.contact-info{
+    margin: 2em auto 0;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    /* border: 1px solid #bbb; */
+    box-shadow: 1px 1px 4px #ddd;
+    border-radius: .8em;
+}
+.img-container{
+    width: 5em;
+    height: 5em;
+    border-radius: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgba(53, 202, 182, .08);
+}
+.mail-icon{
+    width: 2em;
+    filter: invert(59%) sepia(49%) saturate(526%) hue-rotate(126deg) brightness(102%) contrast(95%);
+}
+
+.phone-icon{
+    width: 2.3em;
+    filter: invert(26%) sepia(92%) saturate(1931%) hue-rotate(181deg) brightness(95%) contrast(102%);
+}
+.contact-link{
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+.contact-text{
+    color: #777;
 }
