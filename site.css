@@ -150,8 +150,11 @@ a{
 }
 .greetings{
     text-transform: uppercase;
+    margin: 0;
 }
-
+.intro{
+    margin: 0 2em 2em;
+}
 .highlight{
     color:  var(--clr-accent);
 }
@@ -164,7 +167,7 @@ a{
     object-fit: cover;
     box-shadow: 10px 0px 0px var(--clr-accent-light);
     display: inline-block;
-    margin: 0 auto 2em;
+    margin: 2em auto 3em;
 }
 .name{
     text-transform: uppercase;
@@ -187,6 +190,11 @@ a{
 }
 .btn:hover,.btn:focus{
     background-color: var(--clr-accent-dark)
+}
+.social-links-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .social-links{
     margin-top: 1.5em;
@@ -316,4 +324,34 @@ font-size: 1.5rem;
 }
 .contact-text{
     color: #777;
+}
+
+@media(min-width:500px){
+    .social-links-wrapper{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-links{
+        margin-top: 0;
+    }
+    .intro{
+        margin-bottom: 2.5em;
+    }
+    .header{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section.section--about{
+        margin-top: 0;
+    }
+}
+@media(min-width:650px){
+    .profile-img{
+        width: 350px;
+        height: 350px;
+    }
 }
