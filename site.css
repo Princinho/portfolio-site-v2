@@ -51,7 +51,7 @@ main{
 .logo{
     font-size: 2rem;
     position: absolute;
-    left: 1em;
+    left: .5em;
     top: 1em;
     color: var(--clr-accent);
 }
