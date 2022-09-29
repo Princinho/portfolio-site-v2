@@ -14,3 +14,10 @@ function hideNav(){
     document.body.classList.remove('visible-nav')
     console.log('hiding nav')
 }
+window.addEventListener('scroll',ev=>{
+    if(window.innerHeight+window.scrollY>=document.body.offsetHeight){
+        document.getElementById('scroll-down-indicator').style.visibility='hidden'
+    }else{
+        document.getElementById('scroll-down-indicator').style.visibility='visible'
+    }
+})
