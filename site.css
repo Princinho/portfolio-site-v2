@@ -47,6 +47,15 @@ main{
 :focus{
     outline: 2px solid var(--clr-accent);
 }
+/* Logo */
+.logo{
+    font-size: 2rem;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    color: var(--clr-accent);
+}
+
 
 /* Navigation menu */
 .nav-toggle{
