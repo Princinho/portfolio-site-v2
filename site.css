@@ -41,6 +41,10 @@ a{
 main{
     padding-bottom: 2em;
 }
+.small{
+    font-size: .8rem;
+    color: #777;
+}
 /* a:hover,a:focus{
     opacity: .7;
 } */
@@ -370,6 +374,31 @@ font-size: 1.5rem;
 .contact-text{
     color: var(--clr-grey-text);
 }
+.footer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message{
+    display: flex;
+    align-items: flex-end;
+    min-height: 2.6rem;
+    justify-content: space-between;
+    min-width: 180px;
+    margin-bottom: 2rem;
+}
+.heart{
+    color: red;
+    font-size: 1.5rem;
+    transform: scale(1);
+    /* animation-name: heartBeat;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    animation: heartBeat .8s linear infinite normal;
+}
 .scroll-to-top{
     border: none;
     cursor: pointer;
@@ -392,6 +421,23 @@ font-size: 1.5rem;
     box-shadow: 2px 2px 3px var(--clr-grey-text);
     opacity: 1;
 }
+.scroll-to-top::after{
+    content: 'Back to top';
+    position: absolute;
+    top: 1em;
+    left:-7em;
+    background-color: var(--bg-primary);    
+    color: var(--clr-accent);
+    z-index: 1;
+    border: 1px solid var(--clr-accent);
+    opacity: 0;
+    display: none;    
+}
+.scroll-to-top:hover::after{
+    opacity: 1;
+    display: block;
+}
+
 .scroll-to-top:focus{
     outline: 1px solid white;
 }
@@ -492,6 +538,13 @@ font-size: 1.5rem;
         background-color: var(--bg-primary);
         border-radius: 20px;
     }
+    .footer{
+        padding-left: calc(120px + 1em)
+    }
+    .copy{
+        margin-bottom: 0;
+    }
+    
 }
 
 @keyframes changePosition {
@@ -507,3 +560,23 @@ font-size: 1.5rem;
       transform: translateY(0);
     }
   }
+@keyframes heartBeat{
+    0%{
+        font-size: 1.5rem;
+    }
+    20%{
+        font-size: 2rem;
+    }
+    40%{
+        font-size: 1.5rem;
+    }
+    60%{
+        font-size: 2.3rem;
+    }
+    70%{
+        font-size: 1.5rem;
+    }
+    100%{
+        font-size: 1.5rem;
+    }
+}
