@@ -321,7 +321,10 @@ main{
 font-weight: 600;
 font-size: 1.5rem;
 }
-
+.project-links{
+    margin-top: 1em;
+    font-size: 1.2em;
+}
 .project-img{
     width: 100%;
     object-fit: cover;
