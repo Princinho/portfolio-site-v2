@@ -333,6 +333,11 @@ font-size: 1.5rem;
 .project-link:hover{
     opacity: .7;
 }
+.outside-link-img{
+    width: 1em;
+    margin-left: .5em;
+}
+
 .section__subtitle{
     font-weight: 400;
     font-size: 1.4rem;
@@ -392,11 +397,6 @@ font-size: 1.5rem;
     color: red;
     font-size: 1.5rem;
     transform: scale(1);
-    /* animation-name: heartBeat;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal; */
     animation: heartBeat .8s linear infinite normal;
 }
 .scroll-to-top{
