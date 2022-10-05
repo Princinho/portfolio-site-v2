@@ -277,7 +277,7 @@ main{
 }
 .section__small-title{
     border-top: 1px solid var(--clr-primary-dark);
-    padding-top: 2em;
+    padding-top: 1em;
     display: block;
     font-size: .6em;
     text-transform: uppercase;
@@ -315,6 +315,7 @@ main{
     border: 1px solid var(--clr-dark-shadow);
     border-radius: 16px;
     padding: 1.5em;
+    margin-bottom: 2em;
 }
 
 .project-title{
@@ -469,6 +470,10 @@ font-size: 1.5rem;
     }
     .section.section--about{
         margin-top: 0;
+    }
+    .section.section--about p{
+        font-size: 1.2em;
+        line-height: 1.6em;
     }
     .profile-img{        
         box-shadow: 12px 0 var(--box-shadow-1), 24px 0 var(--box-shadow-2), 36px 0 var(--box-shadow-3);
